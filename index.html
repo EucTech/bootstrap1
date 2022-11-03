@@ -1,114 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/style.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200,300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- bootsrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- box icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!-- css style -->
+  <link rel="stylesheet" href="/css/style.css">
 
 </head>
+
 <body>
 
+  <section id="nav">
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand text-primary" href="#">MAMBA</a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" >
-            
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+      <div class="container">
+        <a class="navbar-brand text-primary" href="#">MAMBA</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Drop Down
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="backgroundImg1"></div>
+          <div class="carousel-caption text-start w-50 position-absolute top-50 start-30 translate-middle-y">
+            <h3 class="fs-1 fw-6">Welcome to Mamba</h3>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
+              nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+              doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="backgroundImg2"></div>
+          <div
+            class="carousel-caption d-none d-md-block text-start w-50 position-absolute top-50 start-30 translate-middle-y">
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+              deleniti vel.
+              Minus et tempore modi architecto.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="backgroundImg3"></div>
+          <div
+            class="carousel-caption d-none d-md-block text-start w-50 position-absolute top-50 start-30 translate-middle-y">
+            <h3>Sequi ea ut et est quaerat</h3>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+              deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- About us -->
+  <section id="About-us">
+    <div class="container ">
+      <div class="row no-gutters about-us1">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="/img/about.jpg" alt="">
+        </div>
+
+        <div class="col-lg-6 about-us2">
+          <div class="aboutus-title">
+            <h1>About Us</h1>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+              consectetur velit.
+              Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          </div>
+
+          <div class="icon-text">
+            <div class="fisrt-icon"><i class="bx bx-fingerprint"></i></div>
+            <div>
+              <h4>LOREM IPSUM</h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                occaecati cupiditate non provident</p>
+            </div>
+          </div>
+
+          <div class="icon-text">
+            <div class="fisrt-icon"><i class="bx bx-gift"></i></div>
+            <div>
+              <h4>NEMO ENIM</h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text  -->
+  <section id="text">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-6 col-lg-4 text-content">
+          <span>01</span>
+          <h3>Lorem Ipsum</h3>
+          <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+        </div>
+        <div class="col-10 col-md-6 col-lg-4 text-content">
+          <span>02</span>
+          <h3>Repellat Nihil</h3>
+          <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest
+          </p>
+        </div>
+        <div class="col-10 col-md-6 col-lg-4 text-content">
+          <span>03</span>
+          <h3>Ad ad velit qui</h3>
+          <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+        </div>
+        <div class="col-10 col-md-6 col-lg-4 text-content">
+          <span>04</span>
+          <h3>Repellendus molestiae</h3>
+          <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
+        </div>
+        <div class="col-10 col-md-6 col-lg-4 text-content">
+          <span>05</span>
+          <h3>Sapiente Magnam</h3>
+          <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
+        </div>
+        <div class="col-10 col-md-6 col-lg-4 text-content">
+          <span>06</span>
+          <h3>Facilis Impedit</h3>
+          <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis
+            sequi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- counting section -->
+  <section id="count-box">
+    <div class="container text-center justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 ">
+          <div class="count">
+            <p>Happy Clients</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="count">
+            <p>Projects</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="count">
+            <p>Hours Of Support</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="count">
+            <p>Hard Workers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- service section -->
+  <section id="service">
+    <div class="container text-center">
+
+      <div class="service-head">
+        <h2>Services</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 text-center justify-content-center">
+          <div class="service-icon"><i class="bi bi-chat-left-dots"></i></div>
+
+          <div class="title-underline">
+            <h4 class="service-tittle"><a href="#">Lorem Ipsum</a></h4>
+            <div class="underline"></div>
+          </div>
+
+          <p class="service-des">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+            occaecati cupiditate non provident</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-items-center">
+          <div class="service-icon"><i class="bi bi-bounding-box"></i></div>
+
+          <div class="title-underline">
+            <h4 class="service-tittle"><a href="#">Dolor Sitema</a></h4>
+            <div class="underline"></div>
+          </div>
+
+          <p class="service-des">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat tarad limino ata</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon"><i class="bi bi-globe"></i></div>
+
+          <div class="title-underline">
+            <h4 class="service-tittle"><a href="#">Sed ut perspiciatis</a></h4>
+            <div class="underline"></div>
+          </div>
+
+          <p class="service-des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon"><i class="bi bi-broadcast"></i></div>
+
+          <div class="title-underline">
+            <h4 class="service-tittle"><a href="#">Magni Dolore</a></h4>
+            <div class="underline"></div>
+          </div>
+
+          <p class="service-des">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
+
+          <div class="title-underline">
+            <h4 class="service-tittle"><a href="#">Nemo Enim</a></h4>
+            <div class="underline"></div>
+          </div>
+
+          <p class="service-des">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon"><i class="bi bi-calendar2-week"></i></div>
+
+          <div class="title-underline">
+            <h4 class="service-tittle"><a href="#">Eiusmod Tempor</a></h4>
+            <div class="underline"></div>
+          </div>
+
+          <p class="service-des">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+            soluta nobis est eligendi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio-sec">
+    <div class="container text-center">
+      <h3>Our Portfolio</h3>
+      <p class="pp">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+        sint consectetur velit. Quisquam quos quisquam cupiditate.
+        Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul id="port-all">
+            <li>All</li>
+            <li>App</li>
+            <li>Card</li>
+            <li>Web</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row portfolio-con">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-1.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>App1</h4>
+              <p>App</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-2.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>Web3</h4>
+              <p>Web</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-3.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>App2</h4>
+              <p>App</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-4.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>Card2</h4>
+              <p>Card</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-5.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>Web2</h4>
+              <p>Web</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-6.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>App3</h4>
+              <p>App</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-7.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>Card1</h4>
+              <p>Card</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-8.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>Card3</h4>
+              <p>Card</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="port1">
+            <img src="/img/portfolio/portfolio-9.jpg" class="img-fluid port-image" alt="">
+            <div class="port2">
+              <h4>Web3</h4>
+              <p>Web</p>
+              <div class="port3">
+                <a href="#"><i class="bi bi-plus"></i></a>
+                <a href="#"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- team -->
+
+  <section id="team-section">
+
+    <div class="container text-center main-team">
+
+      <h1 class="hh1">Our Team</h1>
+      <p class="pp">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+
+      <div class="row">
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="team1">
+            <div class="team-img2"><img src="/img/team/team-1.jpg" class="img-fluid team-img" alt=""></div>
+
+            <div class="team2">
+
+              <div>
+                <h4>Walter White</h4>
+                <div class="team-hr"></div>
+              </div>
+
+              <p>Chief Executive Officer</p>
+
+              <div class="team3">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="team1">
+            <div class="team-img2"><img src="/img/team/team-2.jpg" class="img-fluid team-img" alt=""></div>
+            <div class="team2">
+
+              <div>
+                <h4>Sarah Jhonson</h4>
+                <div class="team-hr"></div>
+              </div>
+
+              <p>Product Manager</p>
+              <div class="team3">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="team1">
+            <div class="team-img2"><img src="/img/team/team-3.jpg" class="img-fluid team-img" alt=""></div>
+            <div class="team2">
+
+              <div>
+                <h4>William Anderson</h4>
+                <div class="team-hr"></div>
+              </div>
+
+              <p>CTO</p>
+
+              <div class="team3">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="team1">
+            <div class="team-img2"><img src="/img/team/team-4.jpg" class="img-fluid team-img" alt=""></div>
+            <div class="team2">
+
+              <div>
+                <h4>Amanda Jepson</h4>
+                <div class="team-hr"></div>
+              </div>
+
+              <p>Accountant</p>
+              <div class="team3">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="main-faq">
+    <div class="container">
+      <div class="faq-tt">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="row d-flex align-items-stretch">
+
+        <div class="col-lg-6 faq-1">
+          <h4>Non consectetur a erat nam at lectusfa urna duis?</h4>
+          <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+            Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+        </div>
+
+        <div class="col-lg-6 faq-1">
+          <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+          <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+            ultrices.
+            Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+            dignissim.</p>
+        </div>
+
+        <div class="col-lg-6 faq-1">
+          <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
+          <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+            integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+            Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.</p>
+        </div>
+
+        <div class="col-lg-6 faq-1">
+          <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+          <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+            ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+            Est pellentesque elit ullamcorper dignissim.</p>
+        </div>
+
+        <div class="col-lg-6 faq-1">
+          <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+          <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel
+            risus commodo viverra maecenas accumsan.
+            Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+        </div>
+
+        <div class="col-lg-6 faq-1">
+          <h4>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h4>
+          <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc
+            vel. Tincidunt eget nullam non nisi est sit amet.
+            Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-us">
+    <div class="container text-center">
+      <div class="row">
+        <div class="contact">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="col-lg-6 contact-1">
+          <div class="contact-2">
+            <div class="contact-icon"><i class='bx bx-map'></i></div>
+            <h4>Our Address</h4>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 contact-1">
+          <div class="contact-2">
+            <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+            <h4>Email Us</h4>
+            <p>info@example.com</p>
+            <p>contact@example.com</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 contact-1">
+          <div class="contact-2">
+            <div class="contact-icon"><i class="bx bx-phone-call"></i></div>
+            <h4>Call Us</h4>
+            <p>+1 5589 55488 55</p>
+            <p>+1 6678 254445 41</p>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <form action="" class="formm">
+            <div class="row">
+              <div class="col-lg-6 na">
+                <input class="name" type="text" placeholder="Your Name" required>
+              </div>
+              <div class="col-lg-6 em">
+                <input class="email" type="email" placeholder="Your Email" required>
+              </div>
+            </div>
+
+            <div class="sub">
+              <input type="text" placeholder="Subject" class="subject">
+            </div>
+
+            <div class="mes">
+              <textarea name="" id="" placeholder="Message" class="message"></textarea>
+            </div>
+
+            <div ><button class="btn btn-primary send">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <section id="footer-sec">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-1">
+            <h3>Mamba</h3>
+            <p>
+              A108 Adam Street <br>
+              NY 535022, USA <br> <br>
+             <strong>Phone:</strong>+1 5589 55488 55 <br>
+             <strong>Email:</strong> info@example.com
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-2">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
-        </div>
-      </nav>
 
-      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="backgroundImg1"></div>
-            <div class="carousel-caption text-start w-50 position-absolute top-50 start-30 translate-middle-y">
-              <h3 class="fs-1 fw-6">Welcome to Mamba</h3>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi 
-                nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse 
-                doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-            </div>
+          <div class="col-lg-3 col-md-6 footer-2">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
           </div>
-          <div class="carousel-item">
-            <div class="backgroundImg2"></div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
+
+          <div class="col-lg-4 col-md-6 footer-3">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" >
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
           </div>
-          <div class="carousel-item">
-            <div class="backgroundImg3"></div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <div class="container my-5">
-        <div class="row justify-content-start align-items-center g-3">
-            <div class="col-10 col-md-6 col-lg-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae optio esse recusandae velit debitis, fuga ipsum hic est perferendis suscipit corrupti, culpa quaerat, nihil at dolores. Error sit ratione rerum!
-            </div>
-
-            <div class="col-10 col-md-6 col-lg-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae optio esse recusandae velit debitis, fuga ipsum hic est perferendis suscipit corrupti, culpa quaerat, nihil at dolores. Error sit ratione rerum!
-            </div>
-
-            <div class="col-10 col-md-6 col-lg-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis explicabo tempore fugit libero deserunt, id ipsum aliquid! Iusto rerum minus facilis pariatur at corporis expedita vero, dolore excepturi molestiae velit.
-            </div>
-            <div class="col-10 col-md-6 col-lg-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi atque quod dignissimos distinctio totam minima mollitia dicta autem nostrum. In recusandae incidunt ad alias quibusdam tenetur odit provident repellat at!
-            </div>
         </div>
       </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+      </div>
+      <div class="rr">
+        Designed by BootstrapMade
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
